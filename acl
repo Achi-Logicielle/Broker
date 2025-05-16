@@ -1,0 +1,11 @@
+user admin
+topic readwrite #
+
+user sensor_client
+topic write microgrid/sensors/#
+topic read microgrid/control/#
+
+user ems_client
+topic read microgrid/sensors/#
+topic write microgrid/control/#
+topic readwrite microgrid/ems/#
