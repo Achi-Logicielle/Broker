@@ -11,4 +11,4 @@ HEALTHCHECK --interval=30s --timeout=5s \
     CMD mosquitto_pub -h localhost -t '$SYS/broker/uptime' -m 'healthcheck' -q 1 || exit 1
 
 # Run Mosquitto
-CMD ["/usr/sbin/mosquitto", "-c", "/mosquitto/config/mosquitto.conf"]
+CMD ["/usr/sbin/mosquitto", "-c", "/config/mosquitto.conf"]

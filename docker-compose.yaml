@@ -10,3 +10,8 @@ services:
       - "9001:9001"
     environment:
       - TZ=UTC
+    volumes:
+      - ./config:/config
+      - ./data:/data
+      - ./log:/log
+      - ./secrets:/secrets
